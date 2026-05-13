@@ -1,0 +1,35 @@
+.features {
+  background: var(--black);
+  color: var(--cream);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem 8%;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+article {
+  padding: 0 2rem;
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+article:last-child {
+  border-right: none;
+}
+
+span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.25rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}

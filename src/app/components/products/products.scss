@@ -1,0 +1,134 @@
+.products {
+  background: var(--cream);
+  color: var(--text-dark);
+  padding: 7rem 8%;
+  text-align: center;
+}
+
+.eyebrow {
+  letter-spacing: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  line-height: 1;
+  margin: 0 0 4rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card,
+.limited-card {
+  background: #f7efe3;
+  min-height: 520px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 260px;
+  max-width: 100%;
+  margin: 0 auto;
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.18));
+}
+
+.product-info h3 {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.product-info p {
+  color: #6b5a4b;
+}
+
+.product-info strong {
+  display: block;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--text-dark);
+  padding: 0.9rem 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--text-dark);
+  color: var(--cream);
+}
+
+.limited-card {
+  text-align: left;
+  background: var(--paper);
+  justify-content: center;
+}
+
+.limited-card span {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.limited-card h3 {
+  font-size: 2.5rem;
+  line-height: 1.05;
+  margin: 1.5rem 0;
+}
+
+.limited-card p {
+  line-height: 1.8;
+  color: #5d4d40;
+}
+
+.limited-card a {
+  margin-top: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1100px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card,
+  .limited-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .products {
+    padding: 5rem 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .product-card img {
+    width: 220px;
+  }
+
+  .limited-card h3 {
+    font-size: 2rem;
+  }
+}
