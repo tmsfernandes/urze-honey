@@ -1,0 +1,60 @@
+.hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+    url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2400&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+  color: var(--cream);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 8%;
+}
+
+.hero-content {
+  max-width: 650px;
+  z-index: 2;
+}
+
+.subtitle {
+  letter-spacing: 0.35rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 0.9;
+  margin: 0 0 2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--cream);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.hero-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.hero-product img {
+  width: min(420px, 90%);
+  filter: drop-shadow(0 35px 60px rgba(0, 0, 0, 0.55));
+}

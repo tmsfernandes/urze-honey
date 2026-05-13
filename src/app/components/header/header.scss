@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 4rem;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--cream);
+  letter-spacing: 0.25rem;
+}
+
+.nav {
+  display: flex;
+  color: var(--cream);
+  gap: 2rem;
+}
+
+.nav a {
+  color: var(--cream);
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  opacity: 1;
+}

@@ -1,0 +1,59 @@
+.origin {
+  min-height: 90vh;
+  background: var(--cream);
+  color: var(--text-dark);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 7rem 8%;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  color: var(--brown);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0 0 2rem;
+}
+
+.origin-text p {
+  max-width: 620px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #4d4036;
+}
+
+.origin-card {
+  background: var(--dark);
+  color: var(--cream);
+  padding: 4rem 3rem;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.origin-card span {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--gold);
+}
+
+.origin-card strong {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.origin-card p {
+  color: var(--muted);
+}
