@@ -4,24 +4,13 @@
   <h2>Mel de Urze Silvestre</h2>
 
   <div class="products-grid">
-    <article class="product-card">
-      <img src="assets/images/jar.png" alt="Frasco de mel de urze 500g" />
+    <article class="product-card" *ngFor="let product of products">
+      <img [src]="product.image" [alt]="product.name" />
 
       <div class="product-info">
-        <h3>Mel de Urze Silvestre</h3>
-        <p>Frasco 500g</p>
-        <strong>12,90 €</strong>
-        <button>Ver produto</button>
-      </div>
-    </article>
-
-    <article class="product-card">
-      <img src="assets/images/jar.png" alt="Frasco de mel de urze 1kg" />
-
-      <div class="product-info">
-        <h3>Mel de Urze Silvestre</h3>
-        <p>Frasco 1kg</p>
-        <strong>21,90 €</strong>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.weight }}</p>
+        <strong>{{ product.price | number:'1.2-2' }} €</strong>
         <button>Ver produto</button>
       </div>
     </article>
