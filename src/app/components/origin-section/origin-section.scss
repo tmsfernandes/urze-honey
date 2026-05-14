@@ -37,7 +37,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 2px;
 }
 
 .origin-card span {
@@ -56,4 +55,42 @@ h2 {
 
 .origin-card p {
   color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .origin {
+    min-height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.4rem;
+    gap: 2.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .origin-text {
+    width: 100%;
+  }
+
+  .origin-text p {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .origin-card {
+  width: 100%;
+  max-width: 100%;
+  min-height: auto;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+
+  .origin-card strong {
+  font-size: 2.8rem;
+  line-height: 1;
+  word-break: normal;
+}
 }

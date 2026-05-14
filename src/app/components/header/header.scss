@@ -34,3 +34,26 @@
 .nav a:hover {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.25rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 0.75rem;
+  }
+}

@@ -33,3 +33,30 @@ p {
   line-height: 1.7;
   font-size: 0.95rem;
 }
+
+@media (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  article {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+
+  article:last-child {
+    border-bottom: none;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
