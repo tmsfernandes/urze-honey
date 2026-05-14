@@ -1,59 +1,96 @@
-# UrzeHoney
+# URZE — Premium Honey Brand Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.10.
+URZE is an Angular SPA concept created for a fictional artisanal honey brand from Trás-os-Montes, Portugal.
 
-## Development server
+The project focuses on:
 
-To start a local development server, run:
+- cinematic visual design,
+- responsive frontend architecture,
+- Angular standalone components,
+- modular SCSS structure,
+- reusable UI components,
+- and modern frontend development practices.
+
+---
+
+## Preview
+
+URZE presents a luxury-inspired digital identity for a small-scale honey producer, combining:
+
+- dark editorial aesthetics,
+- immersive imagery,
+- premium typography,
+- and modern responsive layouts.
+
+---
+
+## Tech Stack
+
+- Angular 21
+- TypeScript
+- SCSS
+- Angular Standalone Components
+- Angular Services
+- Reactive Forms
+- Vite
+- Git + GitHub
+
+---
+
+## Features
+
+- Responsive landing page
+- Modular component architecture
+- Dynamic product rendering
+- Product data service
+- Reactive contact form
+- Premium editorial-inspired UI
+- Mobile responsive layout
+
+---
+
+## Project Structure
 
 ```bash
+src/app
+│
+├── components
+├── pages
+├── models
+├── services
+
+Development
+
+Clone the repository:
+
+git clone https://github.com/tmsfernandes/urze-honey.git
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
 ng serve
+
+Application runs at:
+
+http://localhost:4200
+Author
+
+Tiago Fernandes
+
+GitHub:
+https://github.com/tmsfernandes
+
+Status
+
+Work in progress.
+
+Currently focused on:
+
+frontend architecture,
+UI refinement,
+responsive behavior,
+and Angular application structure.
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
