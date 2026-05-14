@@ -59,38 +59,52 @@ src/app
 ├── models
 ├── services
 
-Development
+```
+
+## Development
 
 Clone the repository:
 
+```bash
 git clone https://github.com/tmsfernandes/urze-honey.git
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
 Run development server:
 
+```bash
 ng serve
+```
 
 Application runs at:
 
+```bash
 http://localhost:4200
-Author
+```
+
+---
+
+## Author
 
 Tiago Fernandes
 
 GitHub:
 https://github.com/tmsfernandes
 
-Status
+---
+
+## Status
 
 Work in progress.
 
 Currently focused on:
 
-frontend architecture,
-UI refinement,
-responsive behavior,
-and Angular application structure.
-```
+- frontend architecture,
+- UI refinement,
+- responsive behavior,
+- and Angular application structure.
