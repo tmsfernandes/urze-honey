@@ -6,7 +6,10 @@ import { OriginSection } from '../../components/origin-section/origin-section';
 import { Features } from '../../components/features/features';
 import { Products } from '../../components/products/products';
 import { GalleryStrip } from '../../components/gallery-strip/gallery-strip';
+import { ContactSection } from '../../components/contact-section/contact-section';
 import { Footer } from '../../components/footer/footer';
+
+
 
 @Component({
   selector: 'app-home',
@@ -17,8 +20,10 @@ import { Footer } from '../../components/footer/footer';
     Features,
     Products,
     GalleryStrip,
-    Footer
-  ],
+    ContactSection,
+    Footer,
+   
+],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
