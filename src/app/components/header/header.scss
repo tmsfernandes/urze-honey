@@ -6,9 +6,9 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
-  padding: 0.5rem 4rem;
+  padding: 2.5rem 4rem;
   z-index: 20;
 }
 
@@ -26,9 +26,12 @@
 .nav {
   display: flex;
   gap: 2.5rem;
+
+  padding-top: 1.2rem;
 }
 
 .nav a {
+  position: relative;
   font-size: 0.78rem;
   letter-spacing: 0.18rem;
   text-transform: uppercase;
@@ -39,6 +42,25 @@
 
 .nav a:hover {
   opacity: 1;
+}
+
+.nav a::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -0.45rem;
+
+  width: 0%;
+  height: 1px;
+
+  background: rgba(255,255,255,0.8);
+
+  transition: 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
