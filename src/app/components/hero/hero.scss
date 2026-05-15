@@ -25,18 +25,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 20%, rgba(0,0,0,0.35));
-  pointer-events: none;
-  background: 
-  linear-gradient(
+  background: linear-gradient(
     to right,
     rgba(0,0,0,0.15),
-      rgba(0,0,0,0.25)
+    rgba(0,0,0,0.25)
   );
+  pointer-events: none;
 }
 
 .hero-content {
-  transform: translateY(2reem);
+  transform: translateY(2rem);
   position: relative;
   z-index: 2;
   max-width: 650px;
@@ -66,7 +64,8 @@ h1 {
   opacity: 0.92;
 }
 
-button {
+.hero-button {
+  display: inline-block;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.22);
   color: var(--cream);
@@ -79,7 +78,7 @@ button {
   backdrop-filter: blur(4px);
 }
 
-button:hover {
+.hero-button:hover {
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.4);
   transform: translateY(-2px);
