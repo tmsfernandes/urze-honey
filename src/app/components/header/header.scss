@@ -8,27 +8,33 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 2rem 4rem;
-  z-index: 100;
+  padding: 0.5rem 4rem;
+  z-index: 20;
 }
 
 .logo {
-  font-size: 2rem;
-  color: var(--cream);
-  letter-spacing: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
 }
 
 .nav {
   display: flex;
-  color: var(--cream);
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav a {
-  color: var(--cream);
-  font-size: 0.95rem;
-  opacity: 0.85;
-  transition: 0.3s;
+  font-size: 0.78rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: var(--text-light);
+  opacity: 0.88;
+  transition: 0.3s ease;
 }
 
 .nav a:hover {
