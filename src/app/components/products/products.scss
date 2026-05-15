@@ -1,81 +1,84 @@
 .products {
   background: var(--cream);
   color: var(--text-dark);
-  padding: 7rem 8%;
+  padding: 6rem 8% 7rem;
   text-align: center;
 }
 
 .eyebrow {
   letter-spacing: 0.35rem;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--brown);
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 3.4rem;
   line-height: 1;
-  margin: 0 0 4rem;
+  margin: 0 0 3.5rem;
 }
 
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  max-width: 1200px;
+  grid-template-columns: 1fr 1fr 1.15fr;
+  gap: 1.4rem;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
 .product-card,
 .limited-card {
   background: #f7efe3;
-  min-height: 520px;
-  padding: 2.5rem;
+  min-height: 430px;
+  padding: 2.4rem;
+  border: 1px solid rgba(36, 27, 20, 0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .product-card img {
+  transition: 0.4s ease;
   width: 260px;
   max-width: 100%;
-  margin: 0 auto;
-  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.18));
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 22px 30px rgba(0, 0, 0, 0.16));
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
 }
 
 .product-info h3 {
-  font-size: 1.4rem;
-  margin: 1.5rem 0 0.5rem;
+  font-size: 1.25rem;
+  margin: 0.5rem 0 0.35rem;
 }
 
 .product-info p {
   color: #6b5a4b;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 .product-info strong {
   display: block;
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-button {
-  background: transparent;
-  border: 1px solid var(--text-dark);
-  padding: 0.9rem 1.6rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.08rem;
-  transition: 0.3s;
+  font-size: 1.05rem;
+  margin: 0.8rem 0 1.2rem;
 }
 
 .product-button {
   display: inline-block;
   background: transparent;
   border: 1px solid var(--text-dark);
-  padding: 0.9rem 1.6rem;
+  padding: 0.75rem 1.35rem;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.14rem;
+  font-size: 0.68rem;
   transition: 0.3s;
 }
 
@@ -84,28 +87,48 @@ button {
   color: var(--cream);
 }
 
-button:hover {
-  background: var(--text-dark);
-  color: var(--cream);
-}
-
 .limited-card {
   text-align: left;
   background: var(--paper);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.limited-card::after {
+  content: '';
+
+  position: absolute;
+
+  right: -10px;
+  bottom: -10px;
+
+  width: 220px;
+  height: 220px;
+
+  background:
+    url('/assets/icons/nature.png') no-repeat center;
+
+  background-size: contain;
+
+  opacity: 0.26;
+
+  pointer-events: none;
 }
 
 .limited-card span {
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
 }
 
 .limited-card h3 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   line-height: 1.05;
-  margin: 1.5rem 0;
+  margin: 1.4rem 0;
 }
 
 .limited-card p {
@@ -115,9 +138,9 @@ button:hover {
 
 .limited-card a {
   margin-top: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.12rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 1100px) {
@@ -141,7 +164,7 @@ button:hover {
   }
 
   .product-card img {
-    width: 220px;
+    width: 200px;
   }
 
   .limited-card h3 {
