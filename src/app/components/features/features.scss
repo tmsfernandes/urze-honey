@@ -1,62 +1,126 @@
 .features {
   background: var(--black);
   color: var(--cream);
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 5rem 8%;
+
+  padding: 4.5rem 7%;
+
   border-top: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 article {
-  padding: 0 2rem;
-  border-right: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+
+  padding: 0 2.5rem;
+
+  border-right: 1px solid rgba(255,255,255,0.18);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 article:last-child {
   border-right: none;
 }
 
-span {
+.feature-icon {
   color: var(--gold);
-  font-size: 0.75rem;
-  letter-spacing: 0.25rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 1.6rem;
-  margin: 1rem 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
 }
 
 p {
   color: var(--muted);
   line-height: 1.7;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .features {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 2rem;
+  }
+
+  article {
+    padding: 2rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  article:nth-child(3),
+  article:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: 1fr;
     padding: 0;
   }
 
   article {
-    width: 100%;
-    padding: 2rem 1.5rem;
-    border-right: none;
-    border-bottom: 1px solid rgba(255,255,255,0.12);
+    padding: 2.5rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  article:nth-child(3) {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
   article:last-child {
     border-bottom: none;
   }
+}
 
-  h3 {
-    font-size: 1.35rem;
-  }
+article img {
+  object-fit: contain;
 
-  p {
-    font-size: 0.9rem;
-  }
+  margin: 0 auto 1.6rem;
+
+  opacity: 0.92;
+
+  display: block;
+}
+
+article:nth-child(1) img {
+  width: 68px;
+  height: 68px;
+}
+
+article:nth-child(2) img {
+  width: 72px;
+  height: 72px;
+}
+
+article:nth-child(3) img {
+  width: 78px;
+  height: 78px;
+}
+
+article:nth-child(4) img {
+  width: 110px;
+  height: 82px;
+}
+
+article .icon-wrapper {
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
